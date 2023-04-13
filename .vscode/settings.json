@@ -1,8 +1,8 @@
 {
    "python.linting.pylintEnabled": false,
    "python.linting.enabled": true,
-   "python.linting.pycodestyleEnabled": true,
-   "python.linting.flake8Enabled": false,
+   "python.linting.pycodestyleEnabled": false,
+   "python.linting.flake8Enabled": true,
    "python.terminal.activateEnvironment": false,
    "python.formatting.autopep8Path": "/home/gitpod/.pyenv/shims/autopep8",
    "python.linting.flake8Path": "/home/gitpod/.pyenv/shims/flake8",
@@ -23,5 +23,14 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "[django-html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+   },
+   "[jinja-html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   }
 }
