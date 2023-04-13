@@ -32,5 +32,8 @@
    },
    "[jinja-html]": {
       "editor.defaultFormatter": "vscode.html-language-features"
+   },
+   "[markdown]": {
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
    }
 }
