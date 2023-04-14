@@ -1,1 +1,1 @@
-web: gunicorn team1hackathon.wsgi 
+web: gunicorn VeteranTalk.wsgi 
