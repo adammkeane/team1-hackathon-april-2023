@@ -1,24 +1,24 @@
 /* color variables*/
 :root {
     --green-color: #597355;
+    --dark-green: #4F604F;
     --beige-color: #8A7064;
   }
 
 h1 {
     /* feel free to delete this, just used for testing the file is loading */
-    font-size: 72px;
+    font-size: 66px;
 }
 
 /*-------------------------------- Header/Navbar*/
-nav, footer, .description-div {
+
+nav, footer, .description-div, .login-div {
     padding: 12px 70px !important;
   }
   .nav-active {
     color: var(--beige-color)!important;
   }
-  .nav-link {
-    color: white;
-  }
+
   /* nav item hover effect */
   nav .nav-item a:hover {
     color: var(--light-gray) !important;
@@ -27,7 +27,6 @@ nav, footer, .description-div {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 0;
-    color: white;
   }
   .login {
     background-color: var(--green-color);
@@ -62,6 +61,22 @@ nav, footer, .description-div {
     margin: 0 auto;
   }
 
+/*-------------------------------- Login Section*/
+
+  .bg-image {
+    background-image: url("../assets/img/dogtags.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ .login-div {
+    max-width: 600px;
+ }
+ .form-control {
+    border-radius: 5rem !important;
+    border: 3px solid rgb(187, 187, 187);
+ }
+
   /*-------------------------------- Footer*/
   footer {
     background-color: var(--beige-color);
@@ -75,6 +90,17 @@ nav, footer, .description-div {
     padding: 10px 80px;
     border-radius: 5rem;
  }
+ .btn-login {
+    background-color: var(--green-color);
+    color: white;
+    padding: 10px 100px;
+    border-radius: 5rem;
+    transition: 200ms;
+ }
+ .btn-login:hover {
+    background-color: var(--dark-green);
+    color: white;
+ }
 /*-------------------------------- Icons*/
 .fa-arrow-right {
     position: relative;
@@ -82,3 +108,13 @@ nav, footer, .description-div {
     left: 4px;
     font-size: 0.8rem;
 }
+
+/*-------------------------------- Media Queries*/
+@media (max-width:1000px) {
+    .login-div {
+        text-align: center;
+    }
+    nav, footer, .description-div, .login-div {
+        padding: 12px 10px !important;
+      }
+  }
