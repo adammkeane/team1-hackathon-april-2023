@@ -1,6 +1,8 @@
 from django.views.generic import TemplateView
-from .models import Post
+from .models import Post, Comment
 from django.views import generic
+from django.shortcuts import get_object_or_404
+from django.http import HttpResponseRedirect
 
 
 class ForumView(TemplateView):
@@ -26,3 +28,20 @@ class PostCreateView(generic.CreateView):
         "content",
         "category",
     ]
+
+
+class CommentCreateView(generic.CreateView):
+    template_name = "comment_form.html"
+    model = Comment
+    fields = [
+        "content",
+    ]
+
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.author = self.request.user
+        # the post will need to be specified. the below is just for test purposes
+        post = get_object_or_404(Post, id=1)
+        obj.post = post
+        obj.save()      
+        return HttpResponseRedirect("../../")
