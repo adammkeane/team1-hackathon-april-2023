@@ -6,5 +6,17 @@ Forum
 {% endblock title %}
 
 {% block content %}
+
 <h1>Forum Page</h1>
+<h2>List of Posts</h2>
+{% for post in post_list %}
+<div class="post-container">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <p>{{ post.category }}</p>
+    <p>{{ post.created_at }}</p>
+    <p>{{ post.author }}</p>
+</div>
+
+{% endfor %}
 {% endblock content %}

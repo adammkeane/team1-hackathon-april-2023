@@ -12,6 +12,7 @@ class ForumView(TemplateView):
 class PostListView(ListView):
     """List view for displaying all posts"""
 
+    template_name = "forum.html"
     model = Post
     context_object_name = "post_list"
     queryset = Post.objects.filter(approved=True).order_by("-created_at")
