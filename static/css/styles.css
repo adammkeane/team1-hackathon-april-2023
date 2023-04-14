@@ -40,7 +40,7 @@ nav, footer, .description-div {
   /*-------------------------------- About page*/
   .about-page {
     height: 70vh;
-    background-image: url("./assets/img/heroimg.png");
+    background-image: url("../assets/img/heroimg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
