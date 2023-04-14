@@ -1,24 +1,23 @@
 /* color variables*/
 :root {
-    --gree-color: #597355;
+    --green-color: #597355;
     --beige-color: #8A7064;
   }
 
 h1 {
     /* feel free to delete this, just used for testing the file is loading */
     font-size: 72px;
-    color: var(--beige-color);
 }
 
 /*-------------------------------- Header/Navbar*/
-nav {
+nav, footer, .description-div {
     padding: 12px 70px !important;
   }
   .nav-active {
     color: var(--beige-color)!important;
   }
   .nav-link {
-    color: #000000;
+    color: white;
   }
   /* nav item hover effect */
   nav .nav-item a:hover {
@@ -28,18 +27,58 @@ nav {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 0;
+    color: white;
   }
-  /* nav brand text hover effect */
-  .navbar-brand:hover {
-    color: var(--beige-color);
-  }
-  .nav-bg {
-    background-color: var(--black-color);
+  .login {
+    background-color: var(--green-color);
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding: 7px 25px 7px 25px !important;
+    border-radius: 5rem;
   }
 
   /*-------------------------------- About page*/
   .about-page {
     height: 70vh;
-    width: 100%;
-    background-color: #505050;
+    background-image: url("./assets/img/heroimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  .about-page p {
+    max-width: 500px
+  }
+  .card {
+    border: none !important;
+  }
+  .card-img {
+    margin: 0 auto;
+    max-width: 160px;
+  }
+
+ /*-------------------------------- Description Section*/
+  .description-div {
+    padding-top: 3rem !important;
+    margin: 0 auto;
+  }
+
+  /*-------------------------------- Footer*/
+  footer {
+    background-color: var(--beige-color);
+  }
+
+ /*-------------------------------- Buttons*/
+ .home-btn {
+    background-color: var(--green-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+    border-radius: 5rem;
+ }
+/*-------------------------------- Icons*/
+.fa-arrow-right {
+    position: relative;
+    top: 1px;
+    left: 4px;
+    font-size: 0.8rem;
+}
