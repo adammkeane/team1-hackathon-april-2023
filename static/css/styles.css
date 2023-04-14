@@ -1,4 +1,45 @@
+/* color variables*/
+:root {
+    --gree-color: #597355;
+    --beige-color: #8A7064;
+  }
+
 h1 {
     /* feel free to delete this, just used for testing the file is loading */
     font-size: 72px;
+    color: var(--beige-color);
 }
+
+/*-------------------------------- Header/Navbar*/
+nav {
+    padding: 12px 70px !important;
+  }
+  .nav-active {
+    color: var(--beige-color)!important;
+  }
+  .nav-link {
+    color: #000000;
+  }
+  /* nav item hover effect */
+  nav .nav-item a:hover {
+    color: var(--light-gray) !important;
+  }
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  /* nav brand text hover effect */
+  .navbar-brand:hover {
+    color: var(--beige-color);
+  }
+  .nav-bg {
+    background-color: var(--black-color);
+  }
+
+  /*-------------------------------- About page*/
+  .about-page {
+    height: 70vh;
+    width: 100%;
+    background-color: #505050;
+  }
