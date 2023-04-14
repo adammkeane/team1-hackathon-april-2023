@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "about",
     "forums",
     "home",
-    "posts",
+    "users",
 ]
 
 MIDDLEWARE = [
