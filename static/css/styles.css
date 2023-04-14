@@ -12,7 +12,7 @@ h1 {
 
 /*-------------------------------- Header/Navbar*/
 
-nav, footer, .description-div, .login-div {
+nav, footer, .description-div, .login-div,.forum-container {
     padding: 12px 70px !important;
   }
   .nav-active {
@@ -73,11 +73,17 @@ nav, footer, .description-div, .login-div {
     max-width: 600px;
  }
  .form-control {
-    border-radius: 5rem !important;
+    border-radius: 5rem;
     border: 3px solid rgb(187, 187, 187);
  }
+/*-------------------------------- Forum Section*/
+.form-forum {
+    border: none;
+    border-radius: 0px;
+}
 
-  /*-------------------------------- Footer*/
+
+/*-------------------------------- Footer*/
   footer {
     background-color: var(--beige-color);
   }
