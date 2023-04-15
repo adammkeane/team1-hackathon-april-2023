@@ -11,6 +11,9 @@ h1 {
 }
 
 /*-------------------------------- Header/Navbar*/
+#nav {
+    background-color: var(--beige-color);
+}
 
 nav, footer, .description-div, .login-div,.forum-container {
     padding: 12px 70px !important;
@@ -18,7 +21,6 @@ nav, footer, .description-div, .login-div,.forum-container {
   .nav-active {
     color: var(--beige-color)!important;
   }
-
   /* nav item hover effect */
   nav .nav-item a:hover {
     color: var(--light-gray) !important;
@@ -34,6 +36,8 @@ nav, footer, .description-div, .login-div,.forum-container {
     padding-right: 25px !important;
     padding: 7px 25px 7px 25px !important;
     border-radius: 5rem;
+    margin-left: 3px;
+
   }
 
   /*-------------------------------- About page*/
@@ -81,6 +85,9 @@ nav, footer, .description-div, .login-div,.forum-container {
     border: none;
     border-radius: 0px;
 }
+.forum-container {
+    padding-top: 4rem !important;
+}
 
 
 /*-------------------------------- Footer*/
@@ -95,6 +102,7 @@ nav, footer, .description-div, .login-div,.forum-container {
     text-decoration: none;
     padding: 10px 80px;
     border-radius: 5rem;
+    transition: 200ms;
  }
  .btn-login {
     background-color: var(--green-color);
@@ -103,7 +111,20 @@ nav, footer, .description-div, .login-div,.forum-container {
     border-radius: 5rem;
     transition: 200ms;
  }
- .btn-login:hover {
+ .btn-submit {
+    background-color: var(--green-color);
+    color: white;
+    padding: 10px 70px;
+    transition: 200ms;
+ }
+ .btn-forum {
+    background-color: var(--green-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+ }
+ .btn-login:hover, .btn-submit:hover, .home-btn:hover {
     background-color: var(--dark-green);
     color: white;
  }
@@ -113,6 +134,9 @@ nav, footer, .description-div, .login-div,.forum-container {
     top: 1px;
     left: 4px;
     font-size: 0.8rem;
+}
+.fa-comment {
+    font-size: 1rem;
 }
 
 /*-------------------------------- Media Queries*/

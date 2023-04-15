@@ -1,6 +1,6 @@
 # VeteranTalk
 
-Brief intro of the site, what it does, who its for. 2/3 sentences
+VeteranTalk is a peer to peer online community platform where veterans of the armed forces can connect, share their stories anonymously and grow together towards mental wellness as they re-enter civilian life. For now, VeteranTalk operates as a forum but there is scope to introduce a live chat feature as the platform develops. Whether they come from the Army, Navy or Air Force, all veterans are welcome at VeteranTalk!
 
 ![Multi Screen Image]()
 
@@ -49,15 +49,19 @@ Brief intro of the site, what it does, who its for. 2/3 sentences
 
 - Site Goal
 
-  - As mentioned above, the site goal is to attract potential customers to take drum lessons.
+  - The goal of the site is to encourage veterans of the armed forces to share the stories of the mental struggles they encountered while serving in order to help them understand and overcome these challenges, helping them maintain mental wellbeing as they readjust to civilian life.
 
 - Target Audience
 
-  - As lessons are in person, the target audience is primarily people living nearby the studio, as they will need to be physically present during the lessons. As of 2021, there are around 329,000 people living in Wandsworth, London (The borough in which the studio is located). Giving a huge amount of potential customers. This is excluding other adjacent boroughs where current students are happy to travel from, so the actual scale of potential customers is far greater.
+  - VeteranTalk is targeted at veterans who have recently left the armed forces and may be finding rejoining civilian life challenging, whether that be due to the sudden loss of their military community, navigating moving into a new civilian career or learning how to build healthy habits for mental wellbeing without the usual structure being in the military may have provided.
 
 - Is there a need for this?
 
-  - As one of the only drum teachers in the surrounding area, the demand for drum teachers far outways the demand. There are currently 4 other teachers in the area, 3 of which do not have a website or significant online presence.
+  - According to recent research by Dr. Alan Finnegan published by the British Medical Journal in 2022, 38% of veterans have a code for common mental health disorders on their primary healthcare records. The highest disorder prevalence was depression, followed by alcohol misues and anxiety. Lower disorder prevalence was seen across PTSD, dementia and substance misuse. 
+  
+  - According to research published by the British Legion in 2010, members of the ex-service community are more likely to experience depression and there is a prevalence of common mental disorders among 20% of the ex-service community. 
+  
+- While between 20% and 40% is quite big range of prevalence, other studies quote within a similar range and it is important changes in the trends of studies over time. Regardless of whether one leans toward the higher or lower end of this range, this is still a very large community experience some level of deterioration in their mental wellbeing. There is definitely a need for a service like this.
 
 - Is the content relevant?
 
@@ -75,25 +79,38 @@ As the viability score matches the importance score, I should in theory be able 
 In order to manage the workload for each sprint, I have divided the above opportunities into three categories, depending on their overall importance to reaching a minimum viable product (MVP).
 
 - Must Have
+The project must have:
+    - A home page outlining purpose of the site and links to its main features.
+    - Login/logout functionality allowing users to maintain anonymity if they so choose.
+    - A forum where users can share and discuss their stories.
+    - A database that stores user data securely.
 
 - Should Have
-
+    - Profile functionality where users can choose whether or not to share information about themselves, and where they can access their history of activity,     
+    notifications etc.
+    
 - Could Have
+    - Live chat feature.
 
 ### Structure Plane
 
 #### User Stories
 
 - Recent Veteran
-  - As recent veteran, I can... so that I can...
+  - As recent veteran, I can use VeteranTalk to chat with likeminded veterans so that we can share tips about how to build new routines that facilitate mental   
+    wellbeing.
 - Navy Veteran
-  - As a navy veteran, I can... so that I can...
+  - As a navy veteran, I can use VeteranTalk to connect with others so that we can form a community in case we are struggling with loneliness after leaving our tight
+    knit way of living on a ship or in barracks.
 - Army Veteran
-  - As an army veteran, I can... so that I can...
+  - As an army veteran, I can use VeteranTalk to open up anonymously if I am struggling with mental health issues after leaving service. This way I can learn about how 
+    common such issues are and be encouraged to find help without fear of being stigmatised.
 
 ### Skeleton Plane
 
 #### Site Flow
+
+
 
 #### Database Schema
 
