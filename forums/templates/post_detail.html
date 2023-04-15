@@ -3,9 +3,6 @@
 
 {% block content %}
 
-
-
-
 <section class="nav-padding container-fluid forum-section pb-4" style=" background-color: #d9d6cf;">
     <div class="row forum-container">
       <div class="col-md-3">
@@ -20,12 +17,12 @@
         </div>
         
       </div>
-      <div class= col-md-7 col-lg-6 pt-2 pt-md-0">
+      <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
         <div class="bg-white rounded-3 p-4 forum-post">
             <div class="d-flex align-items-center gap-3">
                 <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
                 <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
-                    <a href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
+                    <a class="text-decoration-none text-dark" href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
                     <a class="btn-forum rounded-2">{{ post.category }}</a>
                 </div>
               </div>
@@ -35,14 +32,20 @@
             
             <h3>Comments</h3>
             {% for comment in comments %}
-            <p><strong>{{ comment.author }}</strong></p>
-            <p>{{ comment.content }}</p>
+            <div class="mt-1 mb-2">
+                <p class="m-0"><strong>{{ comment.author }}</strong></p>
+                <p class="m-0">{{ comment.content }}</p>
+            </div>
             {% endfor %} 
             
             {% if no_comments %} 
             <p>No comments for this post yet.</p>
-            {% endif %}  
-            <a href="#" class="btn">Add a Comment</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <a href="{% url 'comment_create' post.id %}" class="btn btn-comment">Add a Comment</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="btn btn-comment">Login to add comments</a>
+            {% endif %} 
         </div>
     </div>
   </section>

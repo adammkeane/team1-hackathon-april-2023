@@ -2,19 +2,18 @@
 {% load static %}
 
 {% block content %}
-<!--<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form> -->
 
 <section class="container-fluid mt-4 mb-4">
-    <form class="text-end" >
+    <form class="text-end" method="post">
         <div class="mb-2">
-            {% csrf_token %}
-            {{ form.as_p }}
+            <p>
+                <label for="id_content">Comment:</label>
+                <textarea id="id_content" cols="40"name="content" maxlength="8000" rows="10" required>
+            </p>
         </div>
         <button type="submit" value="Save" class="btn btn-submit rounded-3 text-end">Submit</button>
+        {% csrf_token %}
       </form>
 </section>
+
 {%endblock%}

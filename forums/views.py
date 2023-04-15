@@ -37,14 +37,18 @@ class CommentCreateView(generic.CreateView):
         "content",
     ]
 
+    def get_queryset(self):
+        return Post.objects.filter(id=self.kwargs.get('id'))
+
     def form_valid(self, form):
         obj = form.save(commit=False)
         obj.author = self.request.user
         # the post will need to be specified. the below is just for test purposes
+        # post = get_object_or_404(Post, id=self.get_queryset())
         post = get_object_or_404(Post, id=1)
         obj.post = post
-        obj.save()      
-        return HttpResponseRedirect("../../")
+        obj.save()
+        return HttpResponseRedirect("../../../../")
 
 
 class PostDetailView(generic.View):
