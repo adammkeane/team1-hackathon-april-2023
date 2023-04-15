@@ -65,18 +65,19 @@ VeteranTalk is a peer to peer online community platform where veterans of the ar
 
 - Is the content relevant?
 
-  - Drumming has been proven to have several health benefits, such as improving problem solving skills, relieving stress and tension, boosting creativity, increasing focus and goal setting through practice, along with generally being a very fun and accessible instrument to learn.
+  - The content will be created by the site's community of users, thereby making it relevant to their needs as opposed to needs being assigned by a third party outside of this community.
+  
+- User Needs:
 
-- Customer Needs:
-
-  - At the very least, the customer should know who I am, how to contact me, and where the lessons take place.
-  - Further needs can be seen below, with the level of importance and feasability scored.
-
-As the viability score matches the importance score, I should in theory be able to implement all of the above features. This may well change as I begin the work, due to distractions and unforseen difficulties. The scores above have been based on my own skill levels currently. I may have estimated incorrectly for some, therefore changing the time needed. Between sprints I will reassess each opportunity to see what is more feasable.
+    - Users need to be able to maintain anonymity while accessing this community. In a panel discussion including veterans of the armed forces hosted by Trust in SODA,     Ex-Military Careers and Code Institute before the creation of this project, anxiety about being stigmatised was cited as an obstacle for veterans who may be   
+    struggling with mental wellbeing to seeking help. 
+    
+    - Users need an accessible user interface in order to facilitate usage of the site. It is already a challenge for some people to discuss these issues, so it is
+    vital not to add further restistance to this process with an interface that is difficult to use and hinders engagement with the community.
 
 ### Scope Plane
 
-In order to manage the workload for each sprint, I have divided the above opportunities into three categories, depending on their overall importance to reaching a minimum viable product (MVP).
+In order to manage the workload for each sprint, project features have been assigend differing levels of importance depending on their overall value towards reaching a minimum viable product (MVP).
 
 - Must Have
 The project must have:
@@ -110,6 +111,12 @@ The project must have:
 
 #### Site Flow
 
+Here is a wireframe of the planned site navigation.
+
+![Site Flow Wireframe](./static/assets/img/nav.png)
+
+The user should arrive at a home/landing page when first visiting the site. The page will have a brief description of the site's purpose and features. From the homepage, the user should be able to access the nav bar which will give them option of accessing the site's forum, their profile or a page where they can sign up, or sign in and out.
+
 
 
 #### Database Schema
@@ -124,51 +131,91 @@ The project must have:
 
 #### Colour Scheme
 
-The site features a
+The site features navigational elements in green and brown, reflecting camouflage clothing that may be used in the armed forces.
 
-#### Typography
+Sections and elements that are text heavy use contrasting colours of black, white and charcoal to facilitate readability.
 
-The main font of the entire site is
 
 ## Agile Development Process
 
-We used kanban...
+We set up a repository with the main branch for the project on GitHub. All team members were invited to collaborate on this repository.
+
+Tasks to work on were identified and added to the "Issues" feature of the GitHub repository. A project board was created and issues were categorised as "to do", "in progress", "to test" and "done" so project progress was clear.
+
+The workflow procedure for each team member was as follows:
+
+    -If you need help please ask.
+    -Clone Adam’s project https://github.com/adammkeane/team1-hackathon-april-2023
+    -Install dependencies: pip3 install -r requirements.txt
+    -Create env.py
+    -Create Feature branch and move to it: git checkout -b new-feature-branch-name
+    -Check the branches to make sure you are on the correct branch: git branch.
+    -Code, add, commit, push.
+    -Create Pull Request from GitHub / let team know you did a PR in Slack.
+    -Someone else reviews/approves PR, if OK merges the PR.
+
+![Workflow Procedure](./static/assets/img/workflow.png)
+
+
 
 ## **Current Features**
 
-### **Navbar**
+### **Home Page**
+
+![Home Page](./static/assets/img/homepage-screenshot.png)
+
+Our landing page features a hero image showing members of the army, the navy and the air force, letting people know that veterans of all kinds are welcome in this community.
+
+![Home Page (Continued)](./static/assets/img/homepage-screenshot-2.png)
+
+As the user scrolls further down the home page, there is a section that briefly explains the purpose of the site.
+
+### **Sign Up and Login/Logout Functionality**
+
+![Sign Up and Login/Logout Functionality](./static/assets/img/signup-screenshot.png)
+
+Users have the option of signing up and thereafter logging in or out of Veterans Talk in order to use the forum feature.
+
+### **Profile**
+
+![Profile](screenshot of profile feature when ready)
+
+After deciding to sign up, users can create a profile with the option to share information about themselves should they choose. Their profile page will display a profile picture, a history of recent posts and the option to edit their profile should they chose.
+
+### **Forum**
+
+![Forum](screenshot of forum when ready)
+
+The forum is the main featre of Veterans Talk. It allows users to scroll through a paginated list of posts and contribute posts of their own. Users are also able to sort through posts by community, with "Army", "Navy", "Air Force" and "All Veterans" options available.
+
+### **Comments**
+
+![Comment Section](screenshot of comment section when ready)
+
+Users can comment on posts in the forum and can view the history of past comments on a post.
+
 
 #### Logged Out
 
-![Navbar Logged Out](image of feature)
+![Navbar Logged Out](./static/assets/img/loggedout-navbar.png)
 
-When the user is logged out, both the Login and Sign Up buttons appear, linked to the relevant pages
+When the user is logged out, the Login button appears in the navbar. A "Sign Up" option is also available on the page that the Login button navigates to.
 
 #### Logged In
 
-![Navbar Logged In](image of feature)
+![Navbar Logged In](./static/assets/img/loggedin-navbar.png)
 
-When the user is logged in, a Logout button appears, allowing them to log out
+When the user is logged in, a Logout button appears, allowing them to log out.
 
 #### Mobile Navigation
 
-![Navbar Mobile](image of feature)
+![Navbar Mobile](./static/assets/img/mobile-navbar.png)
 
 The authentication functionality is the same as above, however on smaller screens a burger menu appears, which drops down to reveal the navbar links.
 
-### **Home Page**
-
-![Home Page](image of feature)
-
-What is this?
-
-### **About Page**
-
-![About Page](image of feature)
-
-What is this?
-
 ## **Future Development**
+
+There is scope for future development of this project with potential to add a live chat feature. There would need to be sufficient user traffic and demand to introduce such a feature. It would also require further measures to moderate its content.
 
 ## Testing
 
@@ -339,16 +386,19 @@ Congratualations, you've deployed your site!
 - [Django](https://www.djangoproject.com/) - The Model View Template framework used to build the project and apps.
   - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) was used for the login/out functionality and templates.
 - [Heroku](https://dashboard.heroku.com)
-  - for deployment and hosting
+  - for deployment and hosting.
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
-  - used for the database
+  - used for the database.
 - HTML
-  - Used for the template structures
+  - Used for the template structures.
 - CSS
-  - Used to style the markup
+  - Used to style the markup.
+-Bootstrap
+  - Used to to style the markup and general layouts.
 - Javascript
-  - Custom use
-
+  - Custom use.
+-SQLite
+  - Used to handle user data.
 ## Credits
 
 - [Balsamiq](https://balsamiq.com/) for creating the wireframes
@@ -367,11 +417,8 @@ Congratualations, you've deployed your site!
 - [Coolers](https://coolors.co)
   - for the site colour scheme.
 - [Google Fonts](https://fonts.google.com/)
-- Calendly
-  - for the booking page embedded calendar, it made life very easy for this feature!
-- Cripsy Forms for the create_review template.
-- TinyPNG for image file compression
-- The PageTitleViewMixin was taken from [Forge Packages](https://www.forgepackages.com/guides/page-titles/)
+- [Favicon Generator](https://favicon.io/favicon-generator/)
+ - Used to create the favicon.
 - General References
   - Stack Overflow
   - GeeksForGeeks

@@ -21,13 +21,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def comments_total(self):
+        comments = self.post_comment.all()
+        return len(comments)
 
 
 class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="post_comment")
     created_at = models.DateTimeField(auto_now_add=True)
-    content = models.TextField(blank=True, max_length=8000)
+    content = models.TextField(max_length=8000)
 
     class Meta:
         ordering = ["-created_at"]

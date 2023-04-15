@@ -18,8 +18,8 @@ Forum
     </div>
     {% endfor %}
 </div> -->
-<section class="nav-padding container-fluid bg-dark">
-  <div class="row forum-container">
+<section class="nav-padding container-fluid forum-section pb-4" style=" background-color: #d9d6cf;">
+  <div class="row forum-container padding">
     <div class="col-md-3">
       <div class="sidebar bg-white p-2 text-center rounded-3">
         <h3>Communities</h3>
@@ -30,16 +30,9 @@ Forum
           <li><a class="text-decoration-none" href="#">All Veterans</a></li>
         </ul>
       </div>
-      <div class="popular-topics bg-white p-2 mt-2 text-center rounded-3">
-        <h3>Popular Topics</h3>
-        <ul class="list-unstyled">
-          <li><a class="text-decoration-none" href="#">lorem Ipsum</a></li>
-          <li><a class="text-decoration-none" href="#">lorem Ipsum</a></li>
-          <li><a class="text-decoration-none" href="#">lorem Ipsum</a></li>
-        </ul>
-      </div>
+      
     </div>
-    <div class="col-md-7 col-lg-6">
+    <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
       <form class="text-end" >
         {% csrf_token %}
         <div class="mb-0 d-flex">
@@ -57,14 +50,14 @@ Forum
           <div class="d-flex align-items-center gap-3">
             <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
             <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
-                <h3>{{ post.title }}</h3>
+                <a href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
                 <a class="btn-forum rounded-2">{{ post.category }}</a>
             </div>
           </div>
           <p class="text-end">post by {{ post.author }}</p>
           <p class="mt-3 mb-3">{{ post.content }}</p>
           <div class="d-flex d-flex justify-content-between w-100 gap-5 align-items-center">
-            <a class="text-decoration-none" href="#"><i class="fa-regular fa-comment"></i> comment</a>
+            <a class="text-decoration-none" href="{% url 'post_detail' post.id %}"><i class="fa-regular fa-comment"></i> Comments: {{ post.comments_total }}</a>
             <p class="text-end m-1">{{ post.created_at }}</p>
           </div>
         </div>
