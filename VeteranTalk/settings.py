@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "livereload",
-    "about",
     "forums",
     "home",
+    "profiles",
     "users",
 ]
 
