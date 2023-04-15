@@ -3,6 +3,7 @@ from .models import Post, Comment
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 
 class ForumView(TemplateView):
@@ -45,10 +46,11 @@ class CommentCreateView(generic.CreateView):
         obj.author = self.request.user
         # the post will need to be specified. the below is just for test purposes
         # post = get_object_or_404(Post, id=self.get_queryset())
-        post = get_object_or_404(Post, id=1)
+        post = get_object_or_404(Post, id=self.kwargs.get('id'))
         obj.post = post
         obj.save()
-        return HttpResponseRedirect("../../../../")
+        # return HttpResponseRedirect("../../../../")
+        return HttpResponseRedirect(reverse('post_detail', kwargs={'id': post.id}))
 
 
 class PostDetailView(generic.View):
