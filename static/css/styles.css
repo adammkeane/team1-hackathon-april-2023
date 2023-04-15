@@ -97,10 +97,13 @@ nav, footer, .description-div, .login-div, .padding {
 .forum-post {
   min-height: 600px !important;
 }
+.forum-section, .profile-section {
+  height: auto;
+}
 
 /*-------------------------------- Comments Section*/
 .comments-div {
-  min-height: 600px;
+  min-height: 700px;
 }
 
 /*-------------------------------- Footer*/
@@ -165,7 +168,11 @@ nav, footer, .description-div, .login-div, .padding {
 }
 
 /*-------------------------------- Media Queries*/
-
+@media (min-width:1440px) {
+  .forum-section, .profile-section {
+    height: 100vh;
+  }
+}
 @media (max-width:1000px) {
     .login-div {
         text-align: center;
@@ -178,13 +185,3 @@ nav, footer, .description-div, .login-div, .padding {
         padding-right: 10px !important;
       }
   }
-  @media (max-height: 1880px ) {
-    .profile-section {
-      height: 100vh;
-    }
-   }
-   @media (max-height: 680px ) {
-    .profile-section {
-      height: auto;
-    }
-   }
