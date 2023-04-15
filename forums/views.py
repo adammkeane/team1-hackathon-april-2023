@@ -47,7 +47,7 @@ class CommentCreateView(generic.CreateView):
         # post = get_object_or_404(Post, id=self.get_queryset())
         post = get_object_or_404(Post, id=1)
         obj.post = post
-        obj.save()      
+        obj.save()
         return HttpResponseRedirect("../../../../")
 
 
