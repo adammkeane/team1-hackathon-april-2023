@@ -131,7 +131,7 @@ The user should arrive at a home/landing page when first visiting the site. The 
 #### Colour Scheme
 
 
-![Colour Palette](./static/assets/wireframes/color-palette.png)
+![Colour Palette](./wireframes/colour-palette.png)
 
 The site features navigational elements in green and brown, reflecting camouflage clothing that may be used in the armed forces.
 
@@ -180,19 +180,19 @@ Users have the option of signing up and thereafter logging in or out of Veterans
 
 ### **Profile**
 
-![Profile](./static/assets/wireframes/profile-page.png)
+![Profile](./wireframes/profile-page.png)
 
 After deciding to sign up, users can create a profile with the option to share information about themselves should they choose. Their profile page will display a profile picture, a history of recent posts and the option to edit their profile should they chose.
 
 ### **Forum**
 
-![Forum](./static/assets/wireframes/forum-page.png)
+![Forum](./wireframes/forum-page.png)
 
 The forum is the main featre of Veterans Talk. It allows users to scroll through a paginated list of posts and contribute posts of their own. Users are also able to sort through posts by community, with "Army", "Navy", "Air Force" and "All Veterans" options available.
 
 ### **Comments**
 
-![Comment Section](./static/assets/wireframes/comment-screenshot.png)
+![Comment Section](./static/assets/img/comment-screenshot.png)
 
 Users can comment on posts in the forum and can view the history of past comments on a post.
 
@@ -211,7 +211,7 @@ When the user is logged in, a Logout button appears, allowing them to log out.
 
 ### **Mobile Log In**
 
-![Mobile Log In](./static/assets/wireframes/login-mobile.png)
+![Mobile Log In](./wireframes/login-mobile.png)
 
 The login functionality is the same as above but appears differently on mobile screens.
 
@@ -411,7 +411,7 @@ Congratualations, you've deployed your site!
   - Used to handle user data.
 ## Credits
 
-- [Balsamiq](https://balsamiq.com/) for creating the wireframes
+- [Figma](https://www.figma.com/) for creating the wireframes
 - VS Code for the text editor
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
   - Version 4.6.1, CSS framework for building a responsive front end, quickly. Comes with built-in javascript for features like the collapsable navbar, and accordion FAQs section.
