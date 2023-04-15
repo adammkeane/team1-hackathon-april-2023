@@ -13,7 +13,10 @@
     <form class="text-end" >
         <div class="mb-2">
             {% csrf_token %}
-            {{ form.as_p }}
+            <p>
+                <label for="id_content">Comment:</label>
+                <textarea id="id_content" cols="40"name="content" maxlength="8000" rows="10" required>
+            </p>
         </div>
         <button type="submit" value="Save" class="btn btn-submit rounded-3 text-end">Submit</button>
       </form>
