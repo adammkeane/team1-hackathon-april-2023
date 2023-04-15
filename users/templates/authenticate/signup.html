@@ -1,18 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!-- <p>There is an error in your form</p> -->
 <section class="login-section vh-100 py-5 pt-0">
     <div class="container-fluid vh-100">
         <div class="row vh-100  justify-content-center justify-content-md-between">
             <div class="login-div d-flex col-md-6 align-items-center justify-content-center justify-content-md-between">
                 <div class="">
+                    {% if form.errors %}
+                        <p>There is an error in your form</p>
+                    {% endif %}
                     <h1>VeteranTalk</h1>
                     <p>Enter your username and password:</p>
-                    <form method="POST">
+                    <form action="{% url 'signup' %}" method="POST">
                         {% csrf_token %}
-                        <fieldset>
+                        <fieldset> 
                             <legend>Sign Up</legend>
-                            {{ sign_up_form }}
+                            {{ sign_up_form.as_p}}
                         </fieldset>
                         <div class="form-group">
                             <button class="btn btn-outline-info" type="submit">Sign Up</button>
