@@ -22,7 +22,7 @@
             <div class="d-flex align-items-center gap-3">
                 <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
                 <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
-                    <a href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
+                    <a class="text-decoration-none text-dark" href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
                     <a class="btn-forum rounded-2">{{ post.category }}</a>
                 </div>
               </div>
@@ -41,7 +41,7 @@
             {% if no_comments %} 
             <p>No comments for this post yet.</p>
             {% endif %}  
-            <a href="#" class="btn btn-comment">Add a Comment</a>
+            <a href="{% url 'comment_create' post.id %}" class="btn btn-comment">Add a Comment</a>
         </div>
     </div>
   </section>
