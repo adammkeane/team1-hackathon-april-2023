@@ -21,6 +21,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def comments_total(self):
+        comments = self.post_comment.all()
+        return len(comments)
 
 
 class Comment(models.Model):
