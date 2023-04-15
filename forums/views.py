@@ -56,13 +56,13 @@ class CommentCreateView(generic.CreateView):
     def form_valid(self, form):
         obj = form.save(commit=False)
         obj.author = self.request.user
-        # the post will need to be specified. the below is just for test purposes
-        # post = get_object_or_404(Post, id=self.get_queryset())
         post = get_object_or_404(Post, id=self.kwargs.get('id'))
         obj.post = post
         obj.save()
-        # return HttpResponseRedirect("../../../../")
         return HttpResponseRedirect(reverse('post_detail', kwargs={'id': post.id}))
+
+    def test_func(self):
+        return self.request.user.is_authenticated
 
 
 class PostDetailView(generic.View):
