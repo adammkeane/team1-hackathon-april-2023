@@ -41,14 +41,16 @@
             
             <h3>Comments</h3>
             {% for comment in comments %}
-            <p><strong>{{ comment.author }}</strong></p>
-            <p>{{ comment.content }}</p>
+            <div class="mt-1 mb-2">
+                <p class="m-0"><strong>{{ comment.author }}</strong></p>
+                <p class="m-0">{{ comment.content }}</p>
+            </div>
             {% endfor %} 
             
             {% if no_comments %} 
             <p>No comments for this post yet.</p>
             {% endif %}  
-            <a href="#" class="btn">Add a Comment</a>
+            <a href="#" class="btn btn-comment">Add a Comment</a>
         </div>
     </div>
   </section>
