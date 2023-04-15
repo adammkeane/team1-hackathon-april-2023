@@ -13,17 +13,20 @@ Profile
         <h3 class="pb-2 mt-3">My Profile</h3>
         {# <img class="text-center" src="/static/assets/img/card-img1.png" width="136px" height="136px"> #}
         <div class="sidebar-profile mt-4">
-          <h4>{{ user.username }}</h4>
-          <p class="text-decoration-underline">{{ user.email }}</p>
+          <h4>{{ current_user.username }}</h4>
+          <p class="text-decoration-underline">{{ current_user.email }}</p>
           <button class="btn btn-profile">Edit Profile</button>
         </div>
       </div>
     </div>
     <div class="col-md-7 col-lg-6">
       <h2 class="text-dark text-center bg-white rounded-3 p-2 mt-2 mt-md-0">Recent Posts</h2>
+
+
+      {% for post in posts %}
       <div class="content-forum bg-white p-3 mt-2 rounded-3">
         <div class="d-flex align-items-center gap-3">
-          {# <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px"> #}
+          <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
           <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
             <h3>{{ post.title }}</h3>
             <a class="btn-forum rounded-2">{{ post.category }}</a>
@@ -36,6 +39,8 @@ Profile
           <p class="text-end m-1">{{ post.created_at }}</p>
         </div>
       </div>
+      {% endfor %}
+
       <div class="content-forum bg-white p-3 mt-2 rounded-3">
         <div class="d-flex align-items-center gap-3">
           <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
