@@ -41,7 +41,7 @@
 							</a>
                         {% if request.user.is_authenticated %}
 						<li class="nav-item">
-							<a class="nav-link login" aria-current="page" href="#">
+							<a class="nav-link login" aria-current="page" href="{% url 'logout' %}">
 								Logout
 							</a>
 						</li>
