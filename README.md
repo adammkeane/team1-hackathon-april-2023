@@ -2,7 +2,7 @@
 
 VeteranTalk is a peer to peer online community platform where veterans of the armed forces can connect, share their stories anonymously and grow together towards mental wellness as they re-enter civilian life. For now, VeteranTalk operates as a forum but there is scope to introduce a live chat feature as the platform develops. Whether they come from the Army, Navy or Air Force, all veterans are welcome at VeteranTalk!
 
-![Multi Screen Image]()
+![Multi Screen Image](wireframes/website-mockup.jpg)
 
 ## [Live Site](https://team1-hackathon-april-2023.herokuapp.com)
 
@@ -123,13 +123,15 @@ The user should arrive at a home/landing page when first visiting the site. The 
 
 #### Wireframes
 
-- [Homepage](image of wireframe)
-- [About Page](image of wireframe)
-- [Login/Sign Up Page](image of wireframe)
+- ![Homepage](./static/assets/wireframes/home-page.png)
+- ![Login/Sign Up Page](./static/assets/wireframes/login-page.png)
 
 ### Surface Plane
 
 #### Colour Scheme
+
+
+![Colour Palette](./wireframes/colour-palette.png)
 
 The site features navigational elements in green and brown, reflecting camouflage clothing that may be used in the armed forces.
 
@@ -178,40 +180,48 @@ Users have the option of signing up and thereafter logging in or out of Veterans
 
 ### **Profile**
 
-![Profile](screenshot of profile feature when ready)
+![Profile](./wireframes/profile-page.png)
 
 After deciding to sign up, users can create a profile with the option to share information about themselves should they choose. Their profile page will display a profile picture, a history of recent posts and the option to edit their profile should they chose.
 
 ### **Forum**
 
-![Forum](screenshot of forum when ready)
+![Forum](./wireframes/forum-page.png)
 
 The forum is the main featre of Veterans Talk. It allows users to scroll through a paginated list of posts and contribute posts of their own. Users are also able to sort through posts by community, with "Army", "Navy", "Air Force" and "All Veterans" options available.
 
 ### **Comments**
 
-![Comment Section](screenshot of comment section when ready)
+![Comment Section](./static/assets/img/comment-screenshot.png)
 
 Users can comment on posts in the forum and can view the history of past comments on a post.
 
 
-#### Logged Out
+#### **Logged Out**
 
 ![Navbar Logged Out](./static/assets/img/loggedout-navbar.png)
 
 When the user is logged out, the Login button appears in the navbar. A "Sign Up" option is also available on the page that the Login button navigates to.
 
-#### Logged In
+#### **Logged In**
 
 ![Navbar Logged In](./static/assets/img/loggedin-navbar.png)
 
 When the user is logged in, a Logout button appears, allowing them to log out.
 
-#### Mobile Navigation
+### **Mobile Log In**
+
+![Mobile Log In](./wireframes/login-mobile.png)
+
+The login functionality is the same as above but appears differently on mobile screens.
+
+#### **Mobile Navigation**
 
 ![Navbar Mobile](./static/assets/img/mobile-navbar.png)
 
 The authentication functionality is the same as above, however on smaller screens a burger menu appears, which drops down to reveal the navbar links.
+
+###
 
 ## **Future Development**
 
@@ -401,7 +411,7 @@ Congratualations, you've deployed your site!
   - Used to handle user data.
 ## Credits
 
-- [Balsamiq](https://balsamiq.com/) for creating the wireframes
+- [Figma](https://www.figma.com/) for creating the wireframes
 - VS Code for the text editor
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
   - Version 4.6.1, CSS framework for building a responsive front end, quickly. Comes with built-in javascript for features like the collapsable navbar, and accordion FAQs section.
