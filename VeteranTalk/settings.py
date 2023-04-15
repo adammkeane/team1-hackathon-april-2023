@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "about",
     "forums",
     "home",
+    "profiles",
     "users",
 ]
 
