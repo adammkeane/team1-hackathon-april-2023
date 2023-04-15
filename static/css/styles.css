@@ -98,6 +98,10 @@ nav, footer, .description-div, .login-div, .padding {
   min-height: 600px !important;
 }
 
+/*-------------------------------- Comments Section*/
+.comments-div {
+  min-height: 600px;
+}
 
 /*-------------------------------- Footer*/
   footer {
@@ -166,7 +170,7 @@ nav, footer, .description-div, .login-div, .padding {
     .login-div {
         text-align: center;
     }
-    nav, footer, .description-div, .login-div {
+    nav, footer, .description-div, .login-div  {
         padding: 12px 10px !important;
       }
       .forum-container {
