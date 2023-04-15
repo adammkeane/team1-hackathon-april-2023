@@ -40,8 +40,12 @@
             
             {% if no_comments %} 
             <p>No comments for this post yet.</p>
-            {% endif %}  
+            {% endif %}
+            {% if user.is_authenticated %}
             <a href="{% url 'comment_create' post.id %}" class="btn btn-comment">Add a Comment</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="btn btn-comment">Login to add comments</a>
+            {% endif %} 
         </div>
     </div>
   </section>
