@@ -6,58 +6,58 @@ Profile
 {% endblock title %}
 
 {% block content %}
-<section class="container-fluid bg-dark">
-  <div class="row forum-container ">
-    <div class="col-md-3">
-      <div class="sidebar bg-white p-2 p-4 pt-2 rounded-3">
-        <h3 class="pb-2">My Profile</h3>
-        <img class="text-center" src="/static/assets/img/card-img1.png" width="156px" height="156px">
-        <div class="sidebar-profile mt-4">
-          <h4>Name</h4>
-          <p class="text-decoration-underline">example@hotmail.com</p>
-          <button class="btn btn-profile">Edit Profile</button>
-        </div>
-        <div class="profile-about mt-4">
-          <h4>About</h4>
-          <p>
-            I'm Valentino, a Junior Software Developer! I think we should contribute to an open source. =D
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-7 col-lg-6">
-      <h2 class="text-dark text-center bg-white rounded-3 p-2">Recent Posts</h2>
-      <div class="content-forum bg-white p-3 mt-2 rounded-3">
-        <div class="d-flex align-items-center gap-3">
-          <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
-          <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
-            <h3>{{ post.title }}</h3>
-            <a class="btn-forum rounded-2">{{ post.category }}</a>
+<section class="container-fluid pb-5" style=" background-color: #d9d6cf;">
+  <div class="row forum-container justify-content-lg-center">
+      <div class="text-center text-md-start col-md-5 col-lg-3 col-xl-2">
+          <div class="sidebar bg-white p-2 p-4 pt-2 rounded-3">
+              <h3 class="pb-2">My Profile</h3>
+              <img class="text-center" src="/static/assets/img/card-img1.png" width="136px" height="136px">
+              <div class="sidebar-profile mt-4">
+                  <h4>Name</h4>
+                  <p class="text-decoration-underline">example@hotmail.com</p>
+                  <button class="btn btn-profile">Edit Profile</button>
+              </div>
+              <div class="profile-about mt-4">
+                  <h4>About</h4>
+                  <p>
+                      I'm Valentino, a Junior Software Developer! I think we should contribute to an open source. =D 
+                  </p>
+              </div>
           </div>
-        </div>
-        <p class="text-end">post by {{ post.author }}</p>
-        <p class="mt-3 mb-3">{{ post.content }}</p>
-        <div class="d-flex d-flex justify-content-between w-100 gap-5 align-items-center">
-          <a class="text-decoration-none" href="#"><i class="fa-regular fa-comment"></i> comment</a>
-          <p class="text-end m-1">{{ post.created_at }}</p>
-        </div>
       </div>
-      <div class="content-forum bg-white p-3 mt-2 rounded-3">
-        <div class="d-flex align-items-center gap-3">
-          <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
-          <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
-            <h3>{{ post.title }}</h3>
-            <a class="btn-forum rounded-2">{{ post.category }}</a>
-          </div>
-        </div>
-        <p class="text-end">post by {{ post.author }}</p>
-        <p class="mt-3 mb-3">{{ post.content }}</p>
-        <div class="d-flex d-flex justify-content-between w-100 gap-5 align-items-center">
-          <a class="text-decoration-none" href="#"><i class="fa-regular fa-comment"></i> comment</a>
-          <p class="text-end m-1">{{ post.created_at }}</p>
-        </div>
-      </div>
+      <div class="col-md-7 col-lg-6">
+          <h2 class="text-dark text-center bg-white rounded-3 p-2 mt-2 mt-md-0">Recent Posts</h2>
+          <div class="content-forum bg-white p-3 mt-2 rounded-3">
+              <div class="d-flex align-items-center gap-3">
+                <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
+                <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
+                    <h3>{{ post.title }}</h3>
+                    <a class="btn-forum rounded-2">{{ post.category }}</a>
+                </div>
+              </div>
+              <p class="text-end">post by {{ post.author }}</p>
+              <p class="mt-3 mb-3">{{ post.content }}</p>
+              <div class="d-flex d-flex justify-content-between w-100 gap-5 align-items-center">
+                <a class="text-decoration-none" href="#"><i class="fa-regular fa-comment"></i> comment</a>
+                <p class="text-end m-1">{{ post.created_at }}</p>
+              </div>
+            </div>
+            <div class="content-forum bg-white p-3 mt-2 rounded-3">
+              <div class="d-flex align-items-center gap-3">
+                <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
+                <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
+                    <h3>{{ post.title }}</h3>
+                    <a class="btn-forum rounded-2">{{ post.category }}</a>
+                </div>
+              </div>
+              <p class="text-end">post by {{ post.author }}</p>
+              <p class="mt-3 mb-3">{{ post.content }}</p>
+              <div class="d-flex d-flex justify-content-between w-100 gap-5 align-items-center">
+                <a class="text-decoration-none" href="#"><i class="fa-regular fa-comment"></i> comment</a>
+                <p class="text-end m-1">{{ post.created_at }}</p>
+              </div>
+            </div>
 
-    </div>
-</section>
+      </div>
+  </section>
 {% endblock content %}
