@@ -111,6 +111,12 @@ The project must have:
 
 #### Site Flow
 
+Here is a wireframe of the planned site navigation.
+
+![Site Flow Wireframe](./static/assets/img/nav.png)
+
+The user should arrive at a home/landing page when first visiting the site. The page will have a brief description of the site's purpose and features. From the homepage, the user should be able to access the nav bar which will give them option of accessing the site's forum, their profile or a page where they can sign up, or sign in and out.
+
 
 
 #### Database Schema
@@ -125,7 +131,9 @@ The project must have:
 
 #### Colour Scheme
 
-The site features a
+The site features navigational elements in green and brown, reflecting camouflage clothing that may be used in the armed forces.
+
+Sections and elements that are text heavy use contrasting colours of black, white and charcoal to facilitate readability.
 
 #### Typography
 
@@ -133,7 +141,25 @@ The main font of the entire site is
 
 ## Agile Development Process
 
-We used kanban...
+We set up a repository with the main branch for the project on GitHub. All team members were invited to collaborate on this repository.
+
+Tasks to work on were identified and added to the "Issues" feature of the GitHub repository. A project board was created and issues were categorised as "to do", "in progress", "to test" and "done" so project progress was clear.
+
+The workflow procedure for each team member was as follows:
+
+    -If you need help please ask.
+    -Clone Adam’s project https://github.com/adammkeane/team1-hackathon-april-2023
+    -Install dependencies: pip3 install -r requirements.txt
+    -Create env.py
+    -Create Feature branch and move to it: git checkout -b new-feature-branch-name
+    -Check the branches to make sure you are on the correct branch: git branch.
+    -Code, add, commit, push.
+    -Create Pull Request from GitHub / let team know you did a PR in Slack.
+    -Someone else reviews/approves PR, if OK merges the PR.
+
+![Workflow Procedure](./static/assets/img/workflow.png)
+
+
 
 ## **Current Features**
 
