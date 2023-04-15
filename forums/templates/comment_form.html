@@ -2,9 +2,19 @@
 {% load static %}
 
 {% block content %}
-<form method="post">
+<!--<form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Save">
-</form>
+</form> -->
+
+<section class="container-fluid mt-4 mb-4">
+    <form class="text-end" >
+        <div class="mb-2">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </div>
+        <button type="submit" value="Save" class="btn btn-submit rounded-3 text-end">Submit</button>
+      </form>
+</section>
 {%endblock%}

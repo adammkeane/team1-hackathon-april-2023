@@ -94,6 +94,9 @@ nav, footer, .description-div, .login-div,.forum-container {
 .forum-container {
     padding-top: 4rem !important;
 }
+.forum-post {
+  min-height: 600px !important;
+}
 
 
 /*-------------------------------- Footer*/
