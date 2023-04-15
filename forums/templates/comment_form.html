@@ -4,7 +4,8 @@
 {% block content %}
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    <p><label for="id_content">Comment:</label>
+    <textarea id="id_content" cols="40"name="content" maxlength="8000" rows="10" required></p>
     <input type="submit" value="Save">
 </form>
 {%endblock%}

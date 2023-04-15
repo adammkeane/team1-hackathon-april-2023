@@ -8,6 +8,7 @@
 <p>{{ post.author }}</p>
 
 <h2>Comments</h2>
+<a href="{% url 'comment_create' post.id %}">Add Comment</a>
 {% for comment in comments %}
 <p><strong>{{ comment.author }}</strong></p>
 <p>{{ comment.content }}</p>
