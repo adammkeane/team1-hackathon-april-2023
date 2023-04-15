@@ -16,7 +16,7 @@ h1 {
     background-color: var(--beige-color);
 }
 
-nav, footer, .description-div, .login-div,.forum-container {
+nav, footer, .description-div, .login-div, .padding {
     padding: 12px 70px !important;
   }
   .nav-active {
@@ -161,6 +161,7 @@ nav, footer, .description-div, .login-div,.forum-container {
 }
 
 /*-------------------------------- Media Queries*/
+
 @media (max-width:1000px) {
     .login-div {
         text-align: center;
