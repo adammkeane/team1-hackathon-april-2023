@@ -139,7 +139,13 @@ nav, footer, .description-div, .login-div,.forum-container {
   padding: 10px 20px;
   transition: 200ms;
  }
- .btn-login:hover, .btn-submit:hover, .home-btn:hover {
+ .btn-comment {
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 20px;
+  transition: 200ms;
+ }
+ .btn-login:hover, .btn-submit:hover, .home-btn:hover,  .btn-comment:hover, .btn-profile:hover {
     background-color: var(--dark-green);
     color: white;
  }
