@@ -13,7 +13,9 @@ class Post(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=4, choices=ARMED_FORCES)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="post_owner"
+    )
     approved = models.BooleanField(default=False)
 
     class Meta:
@@ -21,7 +23,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-    
+
     def comments_total(self):
         comments = self.post_comment.all()
         return len(comments)
@@ -29,7 +31,9 @@ class Post(models.Model):
 
 class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="post_comment")
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="post_comment"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     content = models.TextField(max_length=8000)
 
