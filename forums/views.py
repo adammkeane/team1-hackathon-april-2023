@@ -23,12 +23,24 @@ class PostListView(generic.ListView):
 
 
 class PostCreateView(generic.CreateView):
+    template_name = "post_create.html"
+
     model = Post
     fields = [
         "title",
         "content",
         "category",
     ]
+
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.author = self.request.user
+        # the post will need to be specified. the below is just for test purposes
+        # post = get_object_or_404(Post, id=self.get_queryset())
+        post = get_object_or_404(Post, id=1)
+        obj.post = post
+        obj.save()
+        return HttpResponseRedirect("../")
 
 
 class CommentCreateView(generic.CreateView):
@@ -39,7 +51,7 @@ class CommentCreateView(generic.CreateView):
     ]
 
     def get_queryset(self):
-        return Post.objects.filter(id=self.kwargs.get('id'))
+        return Post.objects.filter(id=self.kwargs.get("id"))
 
     def form_valid(self, form):
         obj = form.save(commit=False)
@@ -56,7 +68,7 @@ class CommentCreateView(generic.CreateView):
 class PostDetailView(generic.View):
     def get(self, request, id, *args, **kwargs):
         post = get_object_or_404(Post.objects, id=id)
-        comments = post.post_comment.order_by('-created_at')
+        comments = post.post_comment.order_by("-created_at")
         if len(comments) > 0:
             no_comments = False
         else:
@@ -64,10 +76,10 @@ class PostDetailView(generic.View):
 
         return render(
             request,
-            'post_detail.html',
+            "post_detail.html",
             {
-                'post': post,
-                'comments': comments,
-                'no_comments': no_comments,
+                "post": post,
+                "comments": comments,
+                "no_comments": no_comments,
             },
         )
