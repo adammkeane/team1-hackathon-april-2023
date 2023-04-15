@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1><strong>{{ post.title }}</strong></h1>
+<p>{{ post.content }}</p>
+<p>{{ post.author }}</p>
+
+<h2>Comments</h2>
+{% for comment in comments %}
+<p><strong>{{ comment.author }}</strong></p>
+<p>{{ comment.content }}</p>
+{% endfor %} 
+
+{% if no_comments %} 
+<p>No comments for this post yet.</p>
+{% endif %}  
+
+{%endblock%}

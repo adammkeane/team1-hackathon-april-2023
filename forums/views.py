@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView
 from .models import Post, Comment
 from django.views import generic
-from django.shortcuts import get_object_or_404
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 
 
@@ -45,3 +45,23 @@ class CommentCreateView(generic.CreateView):
         obj.post = post
         obj.save()      
         return HttpResponseRedirect("../../")
+
+
+class PostDetailView(generic.View):
+    def get(self, request, id, *args, **kwargs):
+        post = get_object_or_404(Post.objects, id=id)
+        comments = post.post_comment.order_by('-created_at')
+        if len(comments) > 0:
+            no_comments = False
+        else:
+            no_comments = True
+
+        return render(
+            request,
+            'post_detail.html',
+            {
+                'post': post,
+                'comments': comments,
+                'no_comments': no_comments,
+            },
+        )
