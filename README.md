@@ -65,18 +65,19 @@ VeteranTalk is a peer to peer online community platform where veterans of the ar
 
 - Is the content relevant?
 
-  - Drumming has been proven to have several health benefits, such as improving problem solving skills, relieving stress and tension, boosting creativity, increasing focus and goal setting through practice, along with generally being a very fun and accessible instrument to learn.
+  - The content will be created by the site's community of users, thereby making it relevant to their needs as opposed to needs being assigned by a third party outside     of this community.
+  
+- User Needs:
 
-- Customer Needs:
-
-  - At the very least, the customer should know who I am, how to contact me, and where the lessons take place.
-  - Further needs can be seen below, with the level of importance and feasability scored.
-
-As the viability score matches the importance score, I should in theory be able to implement all of the above features. This may well change as I begin the work, due to distractions and unforseen difficulties. The scores above have been based on my own skill levels currently. I may have estimated incorrectly for some, therefore changing the time needed. Between sprints I will reassess each opportunity to see what is more feasable.
+    - Users need to be able to maintain anonymity while accessing this community. In a panel discussion including veterans of the armed forces hosted by Trust in SODA,     Ex-Military Careers and Code Institute before the creation of this project, anxiety about being stigmatised was cited as an obstacle for veterans who may be   
+    struggling with mental wellbeing to seeking help. 
+    
+    - Users need an accessible user interface in order to facilitate usage of the site. It is already a challenge for some people to discuss these issues, so it is
+    vital not to add further restistance to this process with an interface that is difficult to use and hinders engagement with the community.
 
 ### Scope Plane
 
-In order to manage the workload for each sprint, I have divided the above opportunities into three categories, depending on their overall importance to reaching a minimum viable product (MVP).
+In order to manage the workload for each sprint, project features have been assigend differing levels of importance depending on their overall value towards reaching a minimum viable product (MVP).
 
 - Must Have
 The project must have:
