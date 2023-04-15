@@ -6,7 +6,20 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 def sign_up(request):
-    form = UserCreationForm()
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        #  Validate form
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            # Authenticate and log in user
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            messages.success(request, ("Successlul sign up. Well done..."))
+            return redirect('home')
+    else:
+        form = UserCreationForm()
     return render(request, "authenticate/signup.html", {"sign_up_form": form})
 
 
@@ -25,7 +38,6 @@ def login_user(request):
             return redirect('home')
         else:
             messages.success(request, ("Login error. Try again..."))
-            # messages.success(request, ("Login error. Try again..."))
             return redirect('login')
     else:
         return render(request, 'authenticate/login.html', {})
