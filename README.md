@@ -1,6 +1,6 @@
-# VeteranTalk
+# VeteransTalk
 
-VeteranTalk is a peer to peer online community platform where veterans of the armed forces can connect, share their stories anonymously and grow together towards mental wellness as they re-enter civilian life. For now, VeteranTalk operates as a forum but there is scope to introduce a live chat feature as the platform develops. Whether they come from the Army, Navy or Air Force, all veterans are welcome at VeteranTalk!
+VeteransTalk is a peer to peer online community platform where veterans of the armed forces can connect, share their stories anonymously and grow together towards mental wellness as they re-enter civilian life. For now, VeteranTalk operates as a forum but there is scope to introduce a live chat feature as the platform develops. Whether they come from the Army, Navy or Air Force, all veterans are welcome at VeteranTalk!
 
 
 ![Multi Screen Image](/wireframes/website-mockup.jpg)
