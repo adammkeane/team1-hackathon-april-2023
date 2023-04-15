@@ -65,7 +65,7 @@ VeteranTalk is a peer to peer online community platform where veterans of the ar
 
 - Is the content relevant?
 
-  - The content will be created by the site's community of users, thereby making it relevant to their needs as opposed to needs being assigned by a third party outside     of this community.
+  - The content will be created by the site's community of users, thereby making it relevant to their needs as opposed to needs being assigned by a third party outside of this community.
   
 - User Needs:
 
@@ -135,9 +135,6 @@ The site features navigational elements in green and brown, reflecting camouflag
 
 Sections and elements that are text heavy use contrasting colours of black, white and charcoal to facilitate readability.
 
-#### Typography
-
-The main font of the entire site is
 
 ## Agile Development Process
 
@@ -163,39 +160,62 @@ The workflow procedure for each team member was as follows:
 
 ## **Current Features**
 
-### **Navbar**
+### **Home Page**
+
+![Home Page](./static/assets/img/homepage-screenshot.png)
+
+Our landing page features a hero image showing members of the army, the navy and the air force, letting people know that veterans of all kinds are welcome in this community.
+
+![Home Page (Continued)](./static/assets/img/homepage-screenshot-2.png)
+
+As the user scrolls further down the home page, there is a section that briefly explains the purpose of the site.
+
+### **Sign Up and Login/Logout Functionality**
+
+![Sign Up and Login/Logout Functionality](./static/assets/img/signup-screenshot.png)
+
+Users have the option of signing up and thereafter logging in or out of Veterans Talk in order to use the forum feature.
+
+### **Profile**
+
+![Profile](screenshot of profile feature when ready)
+
+After deciding to sign up, users can create a profile with the option to share information about themselves should they choose. Their profile page will display a profile picture, a history of recent posts and the option to edit their profile should they chose.
+
+### **Forum**
+
+![Forum](screenshot of forum when ready)
+
+The forum is the main featre of Veterans Talk. It allows users to scroll through a paginated list of posts and contribute posts of their own. Users are also able to sort through posts by community, with "Army", "Navy", "Air Force" and "All Veterans" options available.
+
+### **Comments**
+
+![Comment Section](screenshot of comment section when ready)
+
+Users can comment on posts in the forum and can view the history of past comments on a post.
+
 
 #### Logged Out
 
-![Navbar Logged Out](image of feature)
+![Navbar Logged Out](./static/assets/img/loggedout-navbar.png)
 
-When the user is logged out, both the Login and Sign Up buttons appear, linked to the relevant pages
+When the user is logged out, the Login button appears in the navbar. A "Sign Up" option is also available on the page that the Login button navigates to.
 
 #### Logged In
 
-![Navbar Logged In](image of feature)
+![Navbar Logged In](./static/assets/img/loggedin-navbar.png)
 
-When the user is logged in, a Logout button appears, allowing them to log out
+When the user is logged in, a Logout button appears, allowing them to log out.
 
 #### Mobile Navigation
 
-![Navbar Mobile](image of feature)
+![Navbar Mobile](./static/assets/img/mobile-navbar.png)
 
 The authentication functionality is the same as above, however on smaller screens a burger menu appears, which drops down to reveal the navbar links.
 
-### **Home Page**
-
-![Home Page](image of feature)
-
-What is this?
-
-### **About Page**
-
-![About Page](image of feature)
-
-What is this?
-
 ## **Future Development**
+
+There is scope for future development of this project with potential to add a live chat feature. There would need to be sufficient user traffic and demand to introduce such a feature. It would also require further measures to moderate its content.
 
 ## Testing
 
@@ -366,16 +386,19 @@ Congratualations, you've deployed your site!
 - [Django](https://www.djangoproject.com/) - The Model View Template framework used to build the project and apps.
   - [allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) was used for the login/out functionality and templates.
 - [Heroku](https://dashboard.heroku.com)
-  - for deployment and hosting
+  - for deployment and hosting.
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
-  - used for the database
+  - used for the database.
 - HTML
-  - Used for the template structures
+  - Used for the template structures.
 - CSS
-  - Used to style the markup
+  - Used to style the markup.
+-Bootstrap
+  - Used to to style the markup and general layouts.
 - Javascript
-  - Custom use
-
+  - Custom use.
+-SQLite
+  - Used to handle user data.
 ## Credits
 
 - [Balsamiq](https://balsamiq.com/) for creating the wireframes
@@ -394,11 +417,8 @@ Congratualations, you've deployed your site!
 - [Coolers](https://coolors.co)
   - for the site colour scheme.
 - [Google Fonts](https://fonts.google.com/)
-- Calendly
-  - for the booking page embedded calendar, it made life very easy for this feature!
-- Cripsy Forms for the create_review template.
-- TinyPNG for image file compression
-- The PageTitleViewMixin was taken from [Forge Packages](https://www.forgepackages.com/guides/page-titles/)
+- [Favicon Generator](https://favicon.io/favicon-generator/)
+ - Used to create the favicon.
 - General References
   - Stack Overflow
   - GeeksForGeeks
