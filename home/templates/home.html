@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% load static %}
+
+
 
 
 {% block title %}
@@ -24,7 +27,7 @@ VeteransTalk
     <div class="row description-div g-5 justify-content-center">
         <div class="col-md-4 col-lg-3">
             <div class="card">
-                <img src="/static/assets/img/card-img1.png" class="card-img" alt="officers">
+                <img src="{% static 'assets/img/card-img1.png' %}" class="card-img" alt="officers">
                 <div class="card-body">
                     <h3 class="card-title">Share</h3>
                     <p>Sharing personal experiences reduces stigma and increases awareness. Hearing firsthand accounts

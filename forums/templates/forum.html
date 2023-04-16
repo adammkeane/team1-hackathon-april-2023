@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block title %}
 Forum
@@ -29,7 +29,7 @@ Forum
       {% for post in post_list %}
       <div class="content-forum bg-white p-3 mt-2 rounded-3">
         <div class="d-flex align-items-center gap-3">
-          <img src="/static/assets/img/card-img1.png" class="forum-profile-img" width="55px" height="55px">
+          <img src="{% static 'assets/img/card-img1.png' %}" class="forum-profile-img" width="55px" height="55px">
           <div class="d-flex justify-content-between w-100 gap-5 align-items-center">
             <a class="text-dark text-decoration-none" href="{% url 'post_detail' post.id %}">
               <h3>{{ post.title }}</h3>
