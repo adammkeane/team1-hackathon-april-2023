@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = [
-    "https://veteranstalk.onrender.com",
+    "veteranstalk.onrender.com",
     "team1-hackathon-april-2023.herokuapp.com",
     "localhost",
     "127.0.0.1",
