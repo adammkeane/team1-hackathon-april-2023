@@ -5,7 +5,7 @@ VeteransTalk is a peer to peer online community platform where veterans of the a
 
 ![Multi Screen Image](/wireframes/website-mockup.jpg)
 
-## [Live Site](https://team1-hackathon-april-2023.herokuapp.com)
+## [Live Site]([https://team1-hackathon-april-2023.herokuapp.com](https://veteranstalk.onrender.com/))
 
 ## Contents
 
